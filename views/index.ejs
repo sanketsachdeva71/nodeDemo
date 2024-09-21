@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Derma Glow Aesthetics</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- FontAwesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <!-- FontAwesome CDN Header icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <!-- Newsletter Signup -->
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- Bootstrap 4 CDN -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <!-- Font Awesome for WhatsApp icon -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- Favicon -->
+  <link rel="icon" href="/images/facevue%20logo_Website-02.png" type="image/png">
+    <!--befor after slider-->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .navbar-brand {
+            display: flex;
+            align-items: center;
+            text-decoration: none; /* Remove underline from the link */
+            padding: 0; /* Remove default padding */
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            margin-right: 10px; /* Space between logo and heading */
+        }
+
+        .logo img {
+            height: 40px; /* Adjust image height as needed */
+            width: auto; /* Maintain aspect ratio */
+        }
+
+        .heading {
+            font-size: 24px; /* Adjust font size as needed */
+            margin: 0; /* Remove default margin */
+            margin-right: auto;
+        }
+      
+        /* First Header Section (Logo and Search Bar) */
+        .top-header {
+            background-color: #FBF5E5;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            border-bottom: 1px solid #ddd; /* Light border below first header */
+        }
+
+        .top-header .logo img {
+            height: 60px; /* Adjust the size of your logo */
+        }
+
+        .search-icons {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-icons input {
+            padding: 5px 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-right: 15px;
+        }
+
+        .search-icons i {
+            font-size: 20px;
+            margin-left: 15px;
+            cursor: pointer;
+        }
+
+        /* Second Section (Navigation Menu) */
+        .bottom-header {
+            background-color: #FBF5E5;
+            border-top: 1px solid #000000; /* Black border above second header */
+            border-bottom: 1px solid #000000; /* Black border below second header */
+            padding: 10px 0;
+        }
+
+        .bottom-header nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center; /* Center align the menu */
+            margin: 0;
+            padding: 0;
+        }
+
+        .bottom-header nav ul li {
+            display: inline-block;
+            margin: 0 20px;
+        }
+
+        .bottom-header nav ul li a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 15px;
+            transition: color 0.3s ease;
+        }
+
+        .bottom-header nav ul li a:hover {
+            color: #007BFF; /* Hover effect on links */
+        }
+        
+        .form-inline .form-control {
+        display: inline-block;
+        width: auto;
+        vertical-align: middle;
+        margin-left: 403px;
+    }
+    .carousel-item img {
+      height: 400px; /* Set a fixed height for images */
+      object-fit: cover;
+      width: 100%;
+       /* Ensure images cover the area without distortion */
+    }
+    .carousel-caption {
+      bottom: 20px; /* Position the caption slightly above the bottom */
+    }
+    .carousel-indicators button {
+      background-color: #000; /* Dark color for indicators */
+    }
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-color: #000; /* Dark color for control icons */
+    }
+    .btn-primary {
+      background-color: #000; /* Button background color */
+      border-color: #000; /* Button border color */
+    }
+    .btn-primary:hover {
+      background-color: #A61B2A; /* Darker shade on hover */
+      border-color: #A61B2A; /* Border color on hover */
+    }
+
+
+    body {
+      background-color: #FBF5E5; /* Background color */
+      font-family: 'Arial', sans-serif;
+    }
+     .whatsapp-button {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                z-index: 1000;
+                width: 60px;
+                height: 60px;
+                background-color: #25D366;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+                transition: transform 0.3s ease;
+            }
+    
+            .whatsapp-button:hover {
+                transform: scale(1.1);
+            }
+    
+            .whatsapp-button i {
+                font-size: 24px;
+                color: white;
+            }
+    
+            /* Chat Popup Box */
+            .chat-popup {
+                display: none;
+                position: fixed;
+                bottom: 90px;
+                right: 20px;
+                width: 300px;
+                background-color: white;
+                border-radius: 10px;
+                box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+                z-index: 1001;
+            }
+    
+            .chat-popup-header {
+                background-color: #25D366;
+                color: white;
+                padding: 15px;
+                text-align: center;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+            }
+    
+            .chat-popup-body {
+                padding: 15px;
+                text-align: center;
+            }
+    
+            .chat-popup-body p {
+                margin: 0 0 10px;
+            }
+    
+            .predefined-message {
+                background-color: #f1f1f1;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+                padding: 10px;
+                margin-bottom: 10px;
+                cursor: pointer;
+            }
+    
+            .predefined-message:hover {
+                background-color: #e2e2e2;
+            }
+    .hero {
+      background: url('path/to/hero-image.jpg') no-repeat center center;
+      background-size: cover;
+      color: #000000;
+      text-align: center;
+      padding: 5rem 0;
+      min-height: 400px;
+    }
+    .section-container {
+      background-color: #FFFFFF;
+      padding: 3rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-bottom: 2rem;
+    }
+    .section-title {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #C8102E; /* Accent color */
+      margin-bottom: 2rem;
+    }
+    .founder-section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      gap: 2rem;
+    }
+    .founder-section img {
+      border-radius: 8px;
+      width: 100%;
+      max-width: 500px;
+      height: auto;
+    }
+    .founder-info {
+      max-width: 600px;
+    }
+    .founder-info h3 {
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+      color: #C8102E;
+    }
+    .testimonial {
+      margin: 2rem 0;
+    }
+    
+    .navbar {
+      background-color: #FBF5E5; /* Background color for the header */
+      padding: 1.5rem 2rem; /* Increase header size */
+      border-bottom: 1px solid #d7c2a1; /* Optional: border for better separation */
+    }
+    .navbar-brand {
+      display: flex;
+      align-items: center;
+      color: #000000; /* Color for title text */
+    }
+    .navbar-brand img {
+      height: 60px; /* Adjust logo size if needed */
+    }
+    .content-container {
+      padding: 2rem;
+    }
+    .content-heading {
+      color: #000000; /* Heading text color */
+      margin-bottom: 1rem;
+    }
+    .content-image {
+      max-width: 100%; /* Make sure image is responsive */
+      height: auto;
+    }
+    .section {
+      padding: 5rem 0; /* Padding for top and bottom */
+      text-align: center;
+    }
+    .section-title {
+      color: #000000; /* Title color */
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .section-text {
+      color: #333333; /* Text color */
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+    }
+    .section-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    .hero-section .btn {
+      padding: 10px 30px;
+      font-size: 1.2rem;
+      background-color: #444;
+      border-color: #444;
+    }
+
+    .services-section {
+      padding: 50px 0;
+    }
+    .service-card {
+      background-color: #fff;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+    .service-card:hover {
+      transform: scale(1.05);
+    }
+    .footer {
+            background-color: #FBF5E5;;
+            padding: 40px 0;
+            border-top: 3px solid #000; /* Black top border */
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .treatment-item {
+            background-color: #e9ecef;
+            padding: 20px;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .treatment-item:hover {
+            background-color: #d8d8d8;
+        }
+
+        .footer-links {
+            margin: 20px 0;
+        }
+
+        .footer-links a {
+            text-decoration: none;
+            color: #333;
+            margin: 0 10px;
+        }
+
+        .social-media {
+            margin: 20px 0;
+        }
+
+        .social-media a {
+            font-size: 24px;
+            margin: 0 10px;
+            color: #333;
+        }
+
+        .newsletter-signup {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .newsletter-signup input {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-right: 10px;
+            width: 200px;
+        }
+
+        .newsletter-signup .btn {
+            background-color: #000000;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .newsletter-signup .btn:hover {
+            background-color: #0056b3;
+        }
+
+        footer p {
+            text-align: center;
+            margin-top: 20px;
+            color: #666;
+        }
+</style>
+      
+
+        
+  <!-- First Header Section with Logo and Search Bar -->
+  <div class="top-header">
+    <div class="logo">
+      
+        <img src="/images/facevue logo_Website-02.png" alt="Logo">
+        <h1 style="font-size: 24px; color: #000; margin: 0;">Derma Glow Aesthetics</h1> <!-- Heading style -->
+    </div>
+    <div class="search-icons">
+        <input type="text" placeholder="Search...">
+        <button type="submit" class="search-icon">
+                <i class="fas fa-search"></i> <!-- Search icon -->
+    </div>
+</div>
+
+<!-- Second Section: Navigation Menu -->
+<div class="bottom-header">
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/contact">Contact Us</a></li>
+        </ul>
+    </nav>
+</div>
+
+
+       
+ 
+
+      
+  <!-- Hero Section -->
+  
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+
+<div class="container">
+  <h1 class="display-4">Welcome to Derma Glow Aesthetics</h1>
+  <p class="lead">Enhancing Your Natural Beauty with Expertise and Care</p>
+  
+   <!-- Carousel Section -->
+   <div id="carouselExampleDark" class="carousel carousel-dark slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">Slide 1</button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2">Slide 2</button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3">Slide 3</button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="/images/381ce6a17f.jpg" class="d-block w-100" alt="First slide">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Transformative Facial Treatments</h5>
+          <p>Experience our range of facial treatments designed to rejuvenate your skin and enhance your natural glow. Our expert team uses state-of-the-art technology to provide personalized care.</p>
+          <a class="btn btn-primary" href="/services">Learn More</a>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="/images/8c84194b77.jpg" class="d-block w-100" alt="Second slide">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Advanced Laser Therapy</h5>
+          <p>Our advanced laser therapies address various skin concerns, from pigmentation to scars. Achieve clearer and smoother skin with our innovative solutions.</p>
+          <a class="btn btn-primary" href="/services">Learn More</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/images/456ca7efc5.jpg" class="d-block w-100" alt="Third slide">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>>Comprehensive Hair Solutions</h5>
+          <p>Explore our comprehensive hair solutions, including restoration and rejuvenation treatments. Our expert team is dedicated to helping you achieve your hair goals.</p>
+          <a class="btn btn-primary" href="/services">Learn More</a>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  
+  </section>
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="section-container py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center">What Our Clients Say</h2>
+    <div id="testimonialCarousel" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="testimonial text-center">
+            <p>"Facevue Aesthetics transformed my skin! The Hydra Facial was amazing."</p>
+            <footer class="blockquote-footer">John Doe</footer>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="testimonial text-center">
+            <p>"The team is professional and the results are fantastic. Highly recommend!"</p>
+            <footer class="blockquote-footer">Jane Smith</footer>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</section>
+<!-- Call to Action Section -->
+<section id="cta" class="cta">
+  <div class="container">
+    <h2>Ready to Transform Your Look?</h2>
+    <p>Contact us today to schedule your appointment and start your journey to a more radiant you.</p>
+    <a href="/contact" class="btn btn-light btn-lg">Contact Us</a>
+  </div>
+</section>
+  <!-- Services Section -->
+  <section class="services-section">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2>Our Services</h2>
+        <p>Providing the best skincare, haircare, and aesthetic treatments.</p>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="service-card">
+            <h3>Laser Hair Removal</h3>
+            <p>Achieve smooth, hair-free skin with our painless laser treatments.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-card">
+            <h3>Hydra Facial</h3>
+            <p>Refresh and hydrate your skin with our advanced facial technology.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-card">
+            <h3>Body Slimming</h3>
+            <p>Non-surgical slimming solutions to achieve your ideal body shape.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Floating WhatsApp Button -->
+    
+        <div class="whatsapp-button" onclick="toggleChatPopup()">
+            <i class="fab fa-whatsapp"></i>
+        </div>
+    
+        <!-- Chat Popup Box -->
+        <div class="chat-popup" id="chatPopup">
+            <div class="chat-popup-header">
+                Chat with us!
+            </div>
+            <div class="chat-popup-body">
+                <p>Select a message to send:</p>
+                <!-- Predefined Message Buttons -->
+                <div class="predefined-message" onclick="sendMessage('Hi, I need help with reservations!')">
+                    Hi, I need help with reservations!
+                </div>
+                <div class="predefined-message" onclick="sendMessage('Can I see the menu?')">
+                    Can I see the menu?
+                </div>
+                <div class="predefined-message" onclick="sendMessage('What are your opening hours?')">
+                    What are your opening hours?
+                </div>
+                <!-- Custom Message Input -->
+                <input type="text" id="customMessage" placeholder="Type your message..." class="form-control mb-2">
+                <button class="btn btn-success btn-block" onclick="sendCustomMessage()">Send</button>
+            </div>
+        </div>
+    
+        <!-- Bootstrap JS (optional but recommended) -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    
+        <!-- Custom JavaScript -->
+        <script>
+            function toggleChatPopup() {
+                var popup = document.getElementById("chatPopup");
+                popup.style.display = popup.style.display === "none" || popup.style.display === "" ? "block" : "none";
+            }
+    
+            function sendMessage(message) {
+                var phoneNumber = "+917976094754"; // Add your WhatsApp number here, with country code but without the '+'
+                var url = "https://wa.me/" + phoneNumber + "?text=" + encodeURIComponent(message);
+                window.open(url, "_blank");
+            }
+    
+            function sendCustomMessage() {
+                var message = document.getElementById("customMessage").value;
+                if (message !== "") {
+                    sendMessage(message);
+                } else {
+                    alert("Please enter a message.");
+                }
+            }
+        </script>
+  
+ 
+      </style>
+  </head>
+  <body>
+      <!-- Footer Section -->
+      <footer class="footer">
+          <div class="container">
+              <div class="footer-content">
+                  <div class="footer-grid">
+                      <div class="treatment-item"><h4>Hair Treatments</h4></div>
+                      <div class="treatment-item"><h4>Face Treatments</h4></div>
+                      <div class="treatment-item"><h4>Dental Treatments</h4></div>
+                      <div class="treatment-item"><h4>Cosmetology</h4></div>
+                      <div class="treatment-item"><h4>Body Treatments</h4></div>
+                  </div>
+  
+                  <div class="footer-links">
+                      <a href="/">Home</a>
+                      <span class="divider">|</span>
+                      <a href="/about">About Us</a>
+                      <span class="divider">|</span>
+                      <a href="/services">Services</a>
+                      <span class="divider">|</span>
+                      <a href="/contact">Contact Us</a>
+                  </div>
+  
+                  <div class="social-media mb-4">
+                      <h4>Follow Us!</h4>
+                      <a href="https://facebook.com" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                      <a href="https://twitter.com" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+                      <a href="https://instagram.com" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                      <a href="https://linkedin.com" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                      <a href="https://youtube.com" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+                  </div>
+  
+                  <h4>Subscribe to Our Newsletter</h4>
+                  <div class="newsletter-signup">
+                      <form action="YOUR_FORM_HANDLER_URL" method="post">
+                          <input type="email" id="email" placeholder="Enter your email" required>
+                          <button type="submit" class="btn">Subscribe</button>
+                      </form>
+                  </div>
+              </div>
+  
+              <p>&copy; 2024 Derma Glow Aesthetics. All rights reserved.</p>
+          </div>
+      </footer>
+  </body>
+  </html>
+  
+
+ <!-- Bootstrap JS CDN -->
+  <!-- Font Awesome Icon Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

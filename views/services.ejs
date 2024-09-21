@@ -1,0 +1,236 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Derma Glow Aesthetics</title>
+    <!-- Favicon -->
+  <link rel="icon" href="/images/facevue%20logo_Website-02.png" type="image/png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            background-color: #fbf5e5; /* Updated background color */
+        }
+
+        .service-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .service-card:hover {
+            background-color: #d7c2a1; /* Updated hover background color */
+            transform: translateY(-10px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .service-icon {
+            font-size: 60px; /* Increased size */
+            color: #000; /* Black color */
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .service-content {
+            text-align: center;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: #343a40;
+            margin-bottom: 10px;
+        }
+
+        .section-title p {
+            font-size: 1.2rem;
+            color: #6c757d;
+        }
+
+        .special-offer {
+            background-color: #e9ecef;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .special-offer h4 {
+            font-size: 1.5rem;
+            color: #343a40;
+        }
+
+        .special-offer p {
+            font-size: 1.2rem;
+            color: #6c757d;
+        }
+
+        .special-offer a {
+            font-size: 1.2rem;
+            color: #000000; /* Updated color */
+            text-decoration: none;
+        }
+
+        .special-offer a:hover {
+            text-decoration: underline;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid #ddd;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        /* Update accordion color */
+        .btn-link {
+            color: #000000; /* Updated color */
+        }
+
+        .btn-link.collapsed {
+            color: #000000; /* Updated color */
+        }
+    </style>
+</head>
+<body>
+    <div class="container my-5">
+        <div class="section-title">
+            <h2>Our Services</h2>
+            <p>Explore the wide range of services we offer to enhance your beauty and wellness.</p>
+        </div>
+        <div class="row">
+            <!-- Service 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-smile"></i> <!-- Smiling Face -->
+                    </div>
+                    <div class="service-content">
+                        <h5 class="card-title">Facial Treatments</h5>
+                        <p class="card-text">Rejuvenate your skin with our range of facial treatments designed to enhance your natural glow.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Service 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-spa"></i> <!-- Spa -->
+                    </div>
+                    <div class="service-content">
+                        <h5 class="card-title">Spa Services</h5>
+                        <p class="card-text">Experience ultimate relaxation with our luxurious spa services, including massages and body treatments.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Service 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-briefcase-medical"></i> <!-- Medical Briefcase -->
+                    </div>
+                    <div class="service-content">
+                        <h5 class="card-title">Cosmetic Procedures</h5>
+                        <p class="card-text">Enhance your beauty with our cosmetic procedures tailored to meet your individual needs and preferences.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Special Offers Section -->
+        <div class="special-offer">
+            <h4>Special Offer: 20% Off on Your First Visit!</h4>
+            <p>Book your appointment today and enjoy a 20% discount on your first service. Don’t miss out on this exclusive offer!</p>
+            <a href="/contact">Book Now</a>
+        </div>
+
+        <!-- FAQs Section -->
+        <div class="my-5">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div id="faqAccordion">
+                <!-- FAQ 1 -->
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                What is the duration of a typical facial treatment?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            Our facial treatments typically last between 60 to 90 minutes, depending on the type of treatment and your skin's needs.
+                        </div>
+                    </div>
+                </div>
+                <!-- FAQ 2 -->
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Are the cosmetic procedures safe?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            Yes, all our cosmetic procedures are performed by certified professionals using the latest technology to ensure safety and effectiveness.
+                        </div>
+                    </div>
+                </div>
+                <!-- FAQ 3 -->
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                How often should I visit for spa services?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            For optimal results, we recommend visiting our spa services at least once a month to maintain relaxation and rejuvenation.
+                        </div>
+                    </div>
+                </div>
+                <!-- FAQ 4 -->
+                <div class="card">
+                    <div class="card-header" id="headingFour">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Do you offer personalized treatment plans?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            Yes, we offer personalized treatment plans tailored to your specific needs and preferences.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap and jQuery Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
