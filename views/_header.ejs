@@ -1,28 +1,120 @@
 
-<header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="/">Facevue Aesthetics</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- FontAwesome CDN Header icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<style>
+    .logo {
+            display: flex;
+            align-items: center;
+            margin-right: 10px; /* Space between logo and heading */
+        }
+
+        .logo img {
+            height: 40px; /* Adjust image height as needed */
+            width: auto; /* Maintain aspect ratio */
+        }
+
+        .heading {
+            font-size: 24px; /* Adjust font size as needed */
+            margin: 0; /* Remove default margin */
+            margin-right: auto;
+        }
+      
+/* First Header Section (Logo and Search Bar) */
+        .top-header {
+            background-color: #FBF5E5;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            border-bottom: 1px solid #ddd; /* Light border below first header */
+        }
+
+        .top-header .logo img {
+            height: 60px; /* Adjust the size of your logo */
+        }
+
+        .search-icons {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-icons input {
+            padding: 5px 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-right: 15px;
+        }
+
+        .search-icons i {
+            font-size: 20px;
+            margin-left: 15px;
+            cursor: pointer;
+        }
+
+        /* Second Section (Navigation Menu) */
+        .bottom-header {
+            background-color: #FBF5E5;
+            border-top: 1px solid #000000; /* Black border above second header */
+            border-bottom: 1px solid #000000; /* Black border below second header */
+            padding: 10px 0;
+        }
+
+        .bottom-header nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center; /* Center align the menu */
+            margin: 0;
+            padding: 0;
+        }
+
+        .bottom-header nav ul li {
+            display: inline-block;
+            margin: 0 20px;
+        }
+
+        .bottom-header nav ul li a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 15px;
+            transition: color 0.3s ease;
+        }
+
+        .bottom-header nav ul li a:hover {
+            color: #000000; /* Hover effect on links */
+        }
+    </style>
+
+    <!-- First Header Section with Logo and Search Bar -->
+  <div class="top-header">
+    <div class="logo">
+      
+        <img src="/images/facevue logo_Website-02.png" alt="Logo">
+        <h1 style="font-size: 24px; color: #000; margin: 0;">Derma Glow Aesthetics</h1> <!-- Heading style -->
+    </div>
+    <div class="search-icons">
+        <input type="text" placeholder="Search...">
+        <button type="submit" class="search-icon">
+                <i class="fas fa-search"></i> <!-- Search icon -->
+    </div>
+</div>
+
+<!-- Second Section: Navigation Menu -->
+<div class="bottom-header">
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/contact">Contact Us</a></li>
+        </ul>
     </nav>
+</div>
   </header>
-  
+</body>
+</html>

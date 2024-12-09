@@ -6,6 +6,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Derma Glow Aesthetics</title>
+  <!--Testimonial sectional section -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <!--Swiper Slider-->
+   <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://stackpath.bootstrapcdn.com; object-src 'none'; base-uri 'self';">
+
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self' https://code.jquery.com https://stackpath.bootstrapcdn.com https://cdn.jsdelivr.net;">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> <!-- Use Bootstrap CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+  
+  <!--  Full screen SliderBootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- FontAwesome for icons -->
@@ -20,8 +32,14 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
         <!-- Font Awesome for WhatsApp icon -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <!-- Favicon -->
-  <link rel="icon" href="/images/facevue%20logo_Website-02.png" type="image/png">
+       <!--user icon-->
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <!-- Favicon -->
+  <link rel="icon" href="/images/Derma Glow.png" type="image/png">
     <!--befor after slider-->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <!-- Bootstrap CSS -->
@@ -82,7 +100,7 @@
             margin-left: 15px;
             cursor: pointer;
         }
-
+        
         /* Second Section (Navigation Menu) */
         .bottom-header {
             background-color: #FBF5E5;
@@ -113,9 +131,244 @@
         }
 
         .bottom-header nav ul li a:hover {
-            color: #007BFF; /* Hover effect on links */
+            color: #000000; /* Hover effect on links */
+        }
+        /* Hover effect on navigation links */
+        .bottom-header nav ul li a:hover {
+            color: white;
+            background-color: black; /* Black background on hover */
+        }
+        nav.navbar {
+            background-color: transparent !important; /* Force transparent background */
+            box-shadow: none; /* Remove any box shadow */
+        }
+        .nav {
+            background-color: transparent !important; /* Force transparent background */
         }
         
+        .user-icon {
+            font-size: 30px; /* Adjust size as needed */
+            color: #000; /* Icon color */
+            margin-right: 20px; /* Space from the edge */
+            cursor: pointer; /* Change cursor to pointer */
+            position: relative; /* Position for dropdown */
+            background-color: transparent; /* Ensure background is transparent */
+        }
+
+        .user-dropdown {
+            position: absolute; /* Position below the icon */
+            background-color: white; /* Background color for the dropdown */
+            border: 1px solid #ddd; /* Border for the dropdown */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+            z-index: 1000; /* Ensure it appears above other elements */
+            display: none; /* Hide dropdown by default */
+            min-width: 200px; /* Set a minimum width */
+            border-radius: 5px; /* Rounded corners */
+            padding: 0; /* Remove default padding */
+        }
+
+        .user-icon:hover .user-dropdown {
+            display: block; /* Show dropdown on hover */
+        }
+
+        .header.links {
+            list-style: none; /* Remove default list styles */
+            padding: 0; /* Remove padding */
+            margin: 0; /* Remove margin */
+        }
+
+        .dropdown-item {
+            padding: 12px 20px; /* Adjusted padding for list items */
+            color: #000; /* Color of the text */
+            text-decoration: none; /* Remove underline */
+            display: block; /* Block display */
+            font-size: 14px; /* Font size similar to D'Decor */
+            transition: background-color 0.3s; /* Smooth transition for background color */
+        }
+
+        .dropdown-item:hover {
+            background-color: #f1f1f1; /* Background color on hover */
+        }
+        /* Custom Styling for the Search Bar */
+        .search-bar-container {
+              position: relative;
+          }
+  
+          /* Search input field styling */
+          #search-input {
+              padding-left: 20px; /* Adjust for padding */
+              font-size: 18px;
+              width: 100%;
+          }
+  
+          /* Placeholder container inside the input */
+          .SearchBar__PlaceholderContainer {
+              position: absolute;
+              top: 50%;
+              left: 15px;
+              transform: translateY(-50%);
+              pointer-events: none;
+              font-size: 16px;
+              color: #000;
+              white-space: nowrap;
+              overflow: hidden;
+          }
+  
+          /* Hidden by default, shown by JavaScript */
+          .SearchBar__AnimationText {
+              opacity: 0;
+          }
+  
+          /* Input active styles */
+          .input-active {
+              color: black;
+          }
+          body {
+            margin: 0; /* Remove default margin */
+            font-family: outfit, sans-serif;
+        }
+
+        .swiper-container {
+            width: 100%;
+            height: 100vh; /* Full viewport height */
+            position: relative; /* Position relative for absolute positioning of pagination */
+        }
+
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .content {
+            position: absolute;
+            text-align: center;
+            color: #000000; /* Change text color as necessary */
+            opacity: 0; /* Start hidden */
+            transform: translateY(50px) scale(0.9); /* Start slightly lower and smaller */
+            transition: opacity 0.5s, transform 0.5s; /* Smooth transition */
+        }
+
+        /* Keyframe for heading animation */
+        @keyframes slideIn {
+            0% {
+                opacity: 0;
+                transform: translateY(50px) scale(0.9); /* Move slightly up and smaller on load */
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0) scale(1); /* End position */
+            }
+        }
+
+        .content h2 {
+            font-size: 36px; /* Customize heading size */
+            margin: 0 0 10px;
+        }
+
+        .content a {
+            padding: 15px 30px; /* Adjust padding */
+            background-color: transparent; /* Transparent background for button */
+            border: 2px solid white; /* White border */
+            color: white; /* Button text color */
+            text-decoration: none;
+            border-radius: 5px; /* Optional: for rounded corners */
+            transition: all 0.3s; /* Smooth transition for hover effect */
+            font-size: 18px; /* Font size */
+        }
+
+        .content a:hover {
+            background-color: white; /* Change button background on hover */
+            color: #000000; /* Change button text color on hover */
+        }
+
+        .swiper-slide img {
+            width: 100%;
+            height: 100%; /* Ensure image fills the container */
+            object-fit: cover; /* Maintain aspect ratio and cover the entire slide */
+            border-radius: 0; /* No rounded corners for a full-screen effect */
+        }
+
+        /* Pagination styles */
+        .swiper-pagination {
+            position: absolute;
+            bottom: 20px; /* Adjust positioning */
+            left: 50%;
+            transform: translate(-50%, 0); /* Center the pagination */
+            display: flex;
+            justify-content: center;
+            gap: 8px; /* Space between pagination dots */
+        }
+
+        .swiper-pagination-bullet {
+            width: 12px; /* Customize bullet size */
+            height: 12px; /* Customize bullet size */
+            background: black; /* Change bullet color to black */
+            border-radius: 50%; /* Make it circular */
+            opacity: 1; /* Ensures visible on hover */
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        .swiper-pagination-bullet-active {
+            background: gray; /* Change active bullet color if desired */
+            transform: scale(1.2); /* Scale active bullet */
+        }
+        .banner-slider {
+      position: relative;
+      height: 100vh; /* Full height of the viewport */
+      width: 100%; /* Full width of the viewport */
+      overflow: hidden;
+    }
+
+    .carousel-inner {
+      height: 100%; /* Ensure the carousel items take up full height */
+      
+    }
+
+    .carousel-item {
+      height: 100%; /* Full height of the viewport */
+      background-size: cover;
+      background-position: center;
+    }
+
+    .carousel-item img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+
+    .carousel-caption {
+      position: absolute;
+      bottom: 20%;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+    }
+
+    .carousel-indicators {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 15;
+      display: flex;
+      justify-content: center;
+      list-style: none;
+    }
+
+    .carousel-indicators button {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      margin: 0 5px;
+      background-color: rgba(255, 255, 255, 0.5);
+      border: none;
+    }
+
+    .carousel-indicators .active {
+      background-color: rgba(255, 255, 255, 1);
+    }
         .form-inline .form-control {
         display: inline-block;
         width: auto;
@@ -146,8 +399,24 @@
       background-color: #A61B2A; /* Darker shade on hover */
       border-color: #A61B2A; /* Border color on hover */
     }
+    .why-choose-us {
+            padding: 50px 0;
+            background-color: #FBF5E5
+        }
 
+        .card {
+            border: none;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
 
+        .card-icon {
+            width: 60px; /* Set a width for the SVG icons */
+            height: 60px; /* Set a height for the SVG icons */
+            margin: 0 auto 15px; /* Center the icon */
+            display: block; /* Center the icon */
+        }
+      
     body {
       background-color: #FBF5E5; /* Background color */
       font-family: 'Arial', sans-serif;
@@ -221,7 +490,7 @@
                 background-color: #e2e2e2;
             }
     .hero {
-      background: url('path/to/hero-image.jpg') no-repeat center center;
+      
       background-size: cover;
       color: #000000;
       text-align: center;
@@ -264,6 +533,7 @@
     }
     .testimonial {
       margin: 2rem 0;
+      
     }
     
     .navbar {
@@ -330,6 +600,102 @@
     .service-card:hover {
       transform: scale(1.05);
     }
+     /* Chatbot Container */
+    .chatbot-container {
+      position: fixed;
+      left: 20px; /* Position on the left */
+      bottom: 20px; /* Positioned at the bottom */
+      width: 350px;
+      height: 500px;
+      border: 2px solid #ddd;
+      border-radius: 10px;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      z-index: 1000; /* Keep it on top */
+      transition: height 0.3s ease; /* Smooth transition for height */
+    }
+
+    .chat-header {
+      background-color: #000000;
+      color: #fff;
+      padding: 10px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      text-align: center;
+      position: relative;
+    }
+
+    .chat-body {
+      flex-grow: 1;
+      padding: 10px;
+      overflow-y: auto;
+      background-color: #f7f7f7;
+    }
+
+    .chat-message {
+      margin-bottom: 10px;
+    }
+
+    .user-message {
+      text-align: right;
+    }
+
+    .bot-message {
+      text-align: left;
+    }
+
+    .chat-footer {
+      padding: 10px;
+      border-top: 1px solid #ddd;
+    }
+
+    .chat-footer input {
+      width: 80%;
+      padding: 10px;
+      border-radius: 4px;
+      border: 1px solid #ddd;
+    }
+
+    .chat-footer button {
+      width: 18%;
+      padding: 10px;
+      background-color: #000000;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .chat-footer button:hover {
+      background-color: #0056b3;
+    }
+
+    .minimize-btn {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      background: none;
+      border: none;
+      color: white;
+      cursor: pointer;
+      font-size: 20px;
+    }
+
+    /* Collapsed state */
+    .collapsed {
+      height: 50px; /* Height when minimized */
+    }
+
+    .collapsed .chat-body,
+    .collapsed .chat-footer {
+      display: none; /* Hide body and footer when collapsed */
+    }
+    .bg-custom {
+            background-color: #FBF5E5; /* Change to your desired color */
+        }
     .footer {
             background-color: #FBF5E5;;
             padding: 40px 0;
@@ -425,15 +791,114 @@
   <!-- First Header Section with Logo and Search Bar -->
   <div class="top-header">
     <div class="logo">
-      
-        <img src="/images/facevue logo_Website-02.png" alt="Logo">
+    
+      <img src="/images/Derma Glow.png" alt="Logo">
         <h1 style="font-size: 24px; color: #000; margin: 0;">Derma Glow Aesthetics</h1> <!-- Heading style -->
     </div>
     <div class="search-icons">
-        <input type="text" placeholder="Search...">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <div class="user-icon">
+                            <i class="meigee-account fas fa-user-circle"></i> <!-- User icon -->
+                            <div class="user-dropdown">
+                                <ul class="header links">
+                                    <li class="link authorization-link">
+                                        <a class="dropdown-item" href="https://www.ddecor.com/customer/account/login/referer/aHR0cHM6Ly93d3cuZGRlY29yLmNvbS8%2C/">Log In</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="https://www.ddecor.com/customer/account/create/" id="iduArfnpW8">Sign Up</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="https://www.ddecor.com/customer/account/" id="idJxxczZQR">My Account</a>
+                                    </li>
+                                    <li class="my-orders-link">
+                                        <a class="dropdown-item" href="https://www.ddecor.com/sales/order/history/">My Orders</a>
+                                    </li>
+                                    <li class="my-appointment-link">
+                                        <a class="dropdown-item" href="https://www.ddecor.com/styleexpert/index/appointmentsList/">My Appointment</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+       
+    <div class="search-bar-container">
+      <!-- Search Input -->
+      <input type="text" class="form-control" id="search-input" placeholder="">
+      
+      <!-- Placeholder Animation Container -->
+      <div class="SearchBar__PlaceholderContainer">
+          <div id="animationText-1" class="SearchBar__AnimationText">Search "Laser Hair Removal"</div>
+          <div id="animationText-2" class="SearchBar__AnimationText">Search "Hair Transplant"</div>
+          <div id="animationText-3" class="SearchBar__AnimationText">Search "Eyebrow Transplant"</div>
+          <div id="animationText-4" class="SearchBar__AnimationText">Search "Microblading"</div>
+          <div id="animationText-5" class="SearchBar__AnimationText">Search "Hydra Facial"</div>
+          <div id="animationText-6" class="SearchBar__AnimationText">Search "Tattoo Removal"</div>
+          <div id="animationText-7" class="SearchBar__AnimationText">Search "Skin Glowing Treatment"</div>
+          <div id="animationText-8" class="SearchBar__AnimationText">Search "Double Chin Slimming"</div>
+          <div id="animationText-9" class="SearchBar__AnimationText">Search "Dental Implants"</div>
+          <div id="animationText-10" class="SearchBar__AnimationText">Search "Body Slimming"</div>
+      </div>
+       <!-- Bootstrap JS -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+     <!-- External JavaScript File -->
+    <script src="/js/search-bar.js"></script>
+     <!--<script>
+        // Array of placeholder texts (treatments)
+        const placeholderTexts = [
+            "Search 'Laser Hair Removal'", "Search 'Hair Transplant'", "Search 'Eyebrow Transplant'", 
+            "Search 'Microblading'", "Search 'Hydra Facial'", "Search 'Tattoo Removal'",
+            "Search 'Skin Glowing Treatment'", "Search 'Double Chin Slimming'", "Search 'Dental Implants'", 
+            "Search 'Body Slimming'"
+        ];
+
+        let currentIndex = 0;
+        const searchInput = document.getElementById('search-input');
+        const placeholderContainer = document.querySelector('.SearchBar__PlaceholderContainer');
+
+        // Function to change the placeholder text
+        function updatePlaceholder() {
+            // Get the current text from the array based on the index
+            const currentText = placeholderTexts[currentIndex];
+
+            // Update the text content of the container
+            placeholderContainer.textContent = currentText;
+
+            // Move to the next index in the array
+            currentIndex = (currentIndex + 1) % placeholderTexts.length; // Loop back to start
+        }
+
+        // Set interval to change the placeholder every 2 seconds (2000ms)
+        const interval = setInterval(updatePlaceholder, 2000);
+
+        // Hide the animated placeholder when the user focuses on the input
+        searchInput.addEventListener('focus', () => {
+            placeholderContainer.style.display = 'none';
+        });
+
+        // Show the animated placeholder when input is empty and loses focus
+        searchInput.addEventListener('blur', () => {
+            if (!searchInput.value) {
+                placeholderContainer.style.display = 'block';
+            }
+        });
+
+        // Initial call to set the first placeholder text
+        updatePlaceholder();
+    </script> -->
+  </div> 
+
+
         <button type="submit" class="search-icon">
                 <i class="fas fa-search"></i> <!-- Search icon -->
-    </div>
+    </div> 
 </div>
 
 <!-- Second Section: Navigation Menu -->
@@ -457,85 +922,94 @@
   
   <!-- Hero Section -->
   <section class="hero">
-    <div class="container">
-
+    
 <div class="container">
   <h1 class="display-4">Welcome to Derma Glow Aesthetics</h1>
   <p class="lead">Enhancing Your Natural Beauty with Expertise and Care</p>
-  
-   <!-- Carousel Section -->
-   <div id="carouselExampleDark" class="carousel carousel-dark slide">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">Slide 1</button>
-      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2">Slide 2</button>
-      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3">Slide 3</button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active" data-bs-interval="10000">
-        <img src="/images/381ce6a17f.jpg" class="d-block w-100" alt="First slide">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Transformative Facial Treatments</h5>
-          <p>Experience our range of facial treatments designed to rejuvenate your skin and enhance your natural glow. Our expert team uses state-of-the-art technology to provide personalized care.</p>
-          <a class="btn btn-primary" href="/services">Learn More</a>
-        </div>
-      </div>
-      <div class="carousel-item" data-bs-interval="2000">
-        <img src="/images/8c84194b77.jpg" class="d-block w-100" alt="Second slide">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Advanced Laser Therapy</h5>
-          <p>Our advanced laser therapies address various skin concerns, from pigmentation to scars. Achieve clearer and smoother skin with our innovative solutions.</p>
-          <a class="btn btn-primary" href="/services">Learn More</a>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="/images/456ca7efc5.jpg" class="d-block w-100" alt="Third slide">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>>Comprehensive Hair Solutions</h5>
-          <p>Explore our comprehensive hair solutions, including restoration and rejuvenation treatments. Our expert team is dedicated to helping you achieve your hair goals.</p>
-          <a class="btn btn-primary" href="/services">Learn More</a>
-        </div>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-  
-  </section>
+</div>
 
-<!-- Testimonials Section -->
-<section id="testimonials" class="section-container py-5 bg-light">
-  <div class="container">
-    <h2 class="text-center">What Our Clients Say</h2>
-    <div id="testimonialCarousel" class="carousel slide">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="testimonial text-center">
-            <p>"Facevue Aesthetics transformed my skin! The Hydra Facial was amazing."</p>
-            <footer class="blockquote-footer">John Doe</footer>
-          </div>
+
+   <!-- Slider Section Section -->
+   <div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <img src="/images/381ce6a17f.jpg" alt="Fashion Item 1">
+            <div class="content">
+                <h2>Transformative Facial Treatments</h2>
+                
+                <a href="/services">Shop Now</a>
+            </div>
         </div>
-        <div class="carousel-item">
-          <div class="testimonial text-center">
-            <p>"The team is professional and the results are fantastic. Highly recommend!"</p>
-            <footer class="blockquote-footer">Jane Smith</footer>
-          </div>
+        <div class="swiper-slide">
+            <img src="/images/8c84194b77.jpg" alt="Fashion Item 2">
+            <div class="content">
+                <h2>Advanced Laser Therapy</h2>
+                <a href="/services">Shop Now</a>
+            </div>
         </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+        <div class="swiper-slide">
+            <img src="/images/456ca7efc5.jpg" alt="Fashion Item 3">
+            <div class="content">
+                <h2>Comprehensive Hair Solutions</h2>
+                <a href="/services">Shop Now</a>
+            </div>
+        </div>
+      
     </div>
+
+    <!-- Pagination -->
+    <div class="swiper-pagination"></div>
+</div>
+<!-- External Scripts -->
+<script src="/js/swiper-init.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" nonce="<%= nonce %>"></script> <!-- Add jQuery if needed -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js" nonce="<%= nonce %>"></script>
+<!-- Inline Script (with Nonce) -->
+<!-- Inline Script (with Nonce) -->
+
+  </section>
+<!-- Testimonials Section -->
+<section class="relative isolate overflow-hidden bg-custom px-6 py-24 sm:py-32 lg:px-8">
+  <div class="mx-auto max-w-4xl">
+      <h2 class="text-center text-3xl font-bold text-gray-900 mb-10">What Our Clients Say</h2>
+      <div class="flex flex-col md:flex-row">
+          <!-- Left Testimonial -->
+          <div class="md:w-1/2 p-5">
+              <h3 class="text-xl font-semibold text-gray-900 mb-4">Tuple</h3>
+              <blockquote class="text-center text-xl font-semibold leading-8 text-gray-900 sm:text-2xl sm:leading-9">
+                  <p>“I had an amazing experience at Derma Glow Aesthetics! From the moment I walked in, I felt welcomed and at ease. The staff was incredibly knowledgeable and took the time to understand my skincare concerns. The treatments I received were tailored specifically to my needs, and I could see visible results after just a few sessions. My skin has never looked better, and I feel more confident than ever! I highly recommend Derma Glow Aesthetics to anyone looking to enhance their natural beauty!”</p>
+              </blockquote>
+              <figcaption class="mt-10">
+                  <img class="mx-auto h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="Client Image 1">
+                  <div class="mt-4 flex items-center justify-center space-x-3 text-base">
+                      <div class="font-semibold text-gray-900">Judith Black</div>
+                      <svg viewBox="0 0 2 2" width="3" height="3" aria-hidden="true" class="fill-gray-900">
+                          <circle cx="1" cy="1" r="1" />
+                      </svg>
+                      <div class="text-gray-600">CEO of Workcation</div>
+                  </div>
+              </figcaption>
+          </div>
+          <!-- Divider Line -->
+          <div class="hidden md:block border-l border-black h-auto mx-5"></div>
+          <!-- Right Testimonial -->
+          <div class="md:w-1/2 p-5">
+              <h3 class="text-xl font-semibold text-gray-900 mb-4">Reform</h3>
+              <blockquote class="text-center text-xl font-semibold leading-8 text-gray-900 sm:text-2xl sm:leading-9">
+                  <p>“Derma Glow Aesthetics has completely transformed my skin! I struggled with acne and scarring for years, and I finally decided to seek professional help. The team was attentive, understanding, and created a personalized treatment plan just for me. Each visit was not only relaxing but also educational; they explained each procedure and answered all my questions. After a few months, my skin is clearer, smoother, and I can't believe the difference! I feel like a new person, and I can't thank Derma Glow Aesthetics enough!.”</p>
+              </blockquote>
+              <figcaption class="mt-10">
+                  <img class="mx-auto h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1506812576190-1b8e15d4607b?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="Client Image 2">
+                  <div class="mt-4 flex items-center justify-center space-x-3 text-base">
+                      <div class="font-semibold text-gray-900">John Doe</div>
+                      <svg viewBox="0 0 2 2" width="3" height="3" aria-hidden="true" class="fill-gray-900">
+                          <circle cx="1" cy="1" r="1" />
+                      </svg>
+                      <div class="text-gray-600">Founder of ExampleCorp</div>
+                  </div>
+              </figcaption>
+          </div>
+      </div>
   </div>
 </section>
 <!-- Call to Action Section -->
@@ -544,6 +1018,71 @@
     <h2>Ready to Transform Your Look?</h2>
     <p>Contact us today to schedule your appointment and start your journey to a more radiant you.</p>
     <a href="/contact" class="btn btn-light btn-lg">Contact Us</a>
+  </div>
+</section>
+<section class="why-choose-us">
+  <div class="container text-center">
+      <h2>Why Choose Us?</h2>
+      <div class="row">
+          <div class="col-md-4">
+              <div class="card">
+                  <div class="card-icon">
+                      <!-- First Icon -->
+                      <svg preserveAspectRatio="xMidYMid meet" data-bbox="47 61 105.999 78" viewBox="47 61 105.999 78" height="60" width="60" xmlns="http://www.w3.org/2000/svg" data-type="color" role="presentation" aria-hidden="true">
+                        <g>
+                            <path d="M149.731 139H50.269c-1.806 0-3.269-1.452-3.269-3.243V81.204c0-1.791 1.464-3.243 3.269-3.243h99.461c1.806 0 3.269 1.452 3.269 3.243v54.553c.001 1.791-1.463 3.243-3.268 3.243zm-96.192-6.486h92.922V84.447H53.539v48.067z" fill="#0E4828" data-color="1"></path>
+                            <path fill="#0E4828" d="M104.15 108.48c0 2.274-1.858 4.117-4.15 4.117-2.292 0-4.15-1.843-4.15-4.117s1.858-4.117 4.15-4.117c2.292 0 4.15 1.843 4.15 4.117z" data-color="1"></path>
+                            <path fill="#E98866" d="M117.474 108.48c0 9.573-7.823 17.334-17.474 17.334-9.65 0-17.474-7.76-17.474-17.334 0-9.573 7.823-17.334 17.474-17.334 9.65 0 17.474 7.76 17.474 17.334z" data-color="2"></path>
+                            <path d="M140.472 73.037H59.528a2.014 2.014 0 0 1-2.022-2.006c0-1.108.905-2.006 2.022-2.006h80.944c1.117 0 2.022.898 2.022 2.006a2.014 2.014 0 0 1-2.022 2.006z" fill="#0E4828" data-color="1"></path>
+                            <path d="M129.685 65.012h-59.37c-1.117 0-2.022-.898-2.022-2.006S69.197 61 70.315 61h59.371c1.117 0 2.022.898 2.022 2.006s-.905 2.006-2.023 2.006z" fill="#0E4828" data-color="1"></path>
+                            <path fill="#0E4828" d="M74.849 109.201c0 3.329-2.72 6.027-6.076 6.027-3.356 0-6.076-2.698-6.076-6.027s2.72-6.027 6.076-6.027c3.356 0 6.076 2.698 6.076 6.027z" data-color="1"></path>
+                            <path fill="#0E4828" d="M136.872 109.201c0 3.329-2.72 6.027-6.076 6.027-3.356 0-6.076-2.698-6.076-6.027s2.72-6.027 6.076-6.027c3.356 0 6.076 2.698 6.076 6.027z" data-color="1"></path>
+                        </g>
+                    </svg>
+                  </div>
+                  <div class="card-body">
+                      <h5 class="card-title">Quality Service</h5>
+                      <p class="card-text">We prioritize quality in everything we do.</p>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col-md-4">
+              <div class="card">
+                  <div class="card-icon">
+                      <!-- Second Icon -->
+                      <svg preserveAspectRatio="xMidYMid meet" data-bbox="24.545 24.5 150.999 151" viewBox="24.545 24.5 150.999 151" height="60" width="60" xmlns="http://www.w3.org/2000/svg" data-type="color" role="presentation" aria-hidden="true">
+                        <g>
+                            <path fill="#ffc40e" d="M163 99.5c0 34.518-27.982 62.5-62.5 62.5S38 134.018 38 99.5 65.982 37 100.5 37 163 64.982 163 99.5z" data-color="1"></path>
+                            <path d="M67 50.5c0-15 11.9-26 28.3-26h9.4c16.4 0 28.3 10.9 28.3 26 0 1.3-1.1 2.4-2.4 2.4s-2.4-1.1-2.4-2.4c0-12.3-9.9-21.2-23.6-21.2h-9.4c-13.7 0-23.6 8.9-23.6 21.2 0 1.3-1.1 2.4-2.4 2.4S67 51.8 67 50.5zm.5 15.7c1.7 3.4 5.7 4.8 9.2 3.3 4.2-1.8 12.8-4.9 23.3-4.9 9.3 0 18.7 3.2 23.5 5.2.9.4 1.8.5 2.7.5 2.6 0 5-1.4 6.3-3.9l2.7-5.4c.6-1.2.1-2.6-1.1-3.2-1.2-.6-2.6-.1-3.2 1.1l-2.7 5.4c-.6 1.1-1.8 1.6-2.9 1.1-5.1-2.1-15.2-5.5-25.3-5.5-10.8 0-19.7 2.9-25.2 5.3-1.2.5-2.5 0-3.1-1.1l-2.6-5.3c-.6-1.2-2-1.6-3.2-1.1-1.2.6-1.6 2-1.1 3.2l2.7 5.3zM100 48.1c-3.6 0-17.6 2.1-19.2 2.4-1.3.2-2.2 1.4-2 2.7.2 1.2 1.2 2 2.3 2h.4c4.2-.6 15.8-2.3 18.5-2.3 2.8 0 14.3 1.7 18.5 2.3 1.3.2 2.5-.7 2.7-2 .2-1.3-.7-2.5-2-2.7-1.6-.3-15.6-2.4-19.2-2.4zm-44.7 76.4c-.5-1.2.1-2.6 1.3-3.1l23.6-9.4c.1-4.6-1.3-8.8-1.3-8.8v-.1c-3.7-3.8-6.5-8.5-7.8-14-1.2-5.3-1.7-12.2-1.7-12.5-.1-1.3.9-2.4 2.2-2.5 1.3-.1 2.4.9 2.5 2.2 0 .1.5 6.9 1.6 11.8 2.7 11.2 12.7 19.1 24.3 19.1 11.6 0 21.6-7.8 24.3-19.1 1.2-4.9 1.6-11.7 1.6-11.8.1-1.3 1.2-2.3 2.5-2.2 1.3.1 2.3 1.2 2.2 2.5 0 .3-.5 7.3-1.8 12.5-1.3 5.4-4 10.2-7.7 13.9-.5 2.5-.9 6-1 9.1l23.1 9.3c1.2.5 1.8 1.9 1.3 3.1-.4.9-1.3 1.5-2.2 1.5-.3 0-.6-.1-.9-.2l-18.7-7.5c-5.3 8.7-11.9 12.4-22.9 12.4-10.9 0-17.6-3.6-22.9-12.4l-18.7 7.5c-.3.1-.6.2-.9.2-.7 0-1.6-.6-2-1.5zm44.7-12.7c-5.6 0-10.8-1.5-15.3-4.2.4 3.4.5 7.8-1.2 11.6 3.9 4.8 8.8 6.7 16.5 6.7 7.7 0 12.5-1.9 16.5-6.7-1.3-3.2-1.1-8.1-.7-11.9-4.6 2.9-10 4.5-15.8 4.5zm75.1 48.2c.4.6.6 1.4.3 2.1-2.6 7.8-11.5 13.4-21.1 13.4-8.6 0-16.4-4.7-20.5-11.9-.2.1-.5.1-.7.1H67c-.3 0-.5-.1-.7-.1-4.1 7.3-11.9 11.9-20.5 11.9-9.6 0-18.5-5.6-21.1-13.4-.2-.7-.1-1.5.3-2.1.4-.6 1.2-1 1.9-1h15.5l3.3-3.3v-7.5l-3.3-3.3H26.9c-.8 0-1.6-.4-2-1.1-.4-.7-.5-1.6-.1-2.3 4.1-7.9 12.3-13.1 21-13.1 8.6 0 16.4 4.7 20.5 11.9.2-.1.5-.1.7-.1h66c.3 0 .5.1.7.1 4.1-7.3 11.9-11.9 20.5-11.9s16.9 5.1 21 13.1c.4.7.3 1.6-.1 2.3-.4.7-1.2 1.1-2 1.1H160l-3.3 3.3v7.5l3.3 3.3h13.2c.7 0 1.4.3 1.9 1zm-5.8 3.7H159c-.6 0-1.2-.2-1.7-.7l-4.7-4.7c-.4-.4-.7-1-.7-1.7v-9.4c0-.6.2-1.2.7-1.7l4.7-4.7c.4-.4 1-.7 1.7-.7h9.8c-3.6-4.4-9-7.1-14.5-7.1-8 0-15.1 5.1-17.8 12.6-.4 1.2-1.8 1.9-3 1.4-1-.3-1.5-1.3-1.5-2.2H68.1c0 1-.6 1.9-1.6 2.2-1.2.4-2.6-.2-3-1.4-2.7-7.5-9.8-12.6-17.8-12.6-5.6 0-10.9 2.7-14.5 7.1h12.2c.6 0 1.2.2 1.7.7l4.7 4.7c.4.4.7 1 .7 1.7v9.4c0 .6-.2 1.2-.7 1.7L45 163c-.4.4-1 .7-1.7.7H30.7c3 4.2 8.8 7.1 15 7.1 8 0 15.1-5.1 17.8-12.6.4-1.2 1.8-1.9 3-1.4 1 .3 1.6 1.3 1.6 2.2h63.8c0-1 .6-1.9 1.6-2.2 1.2-.4 2.6.2 3 1.4 2.7 7.5 9.8 12.6 17.8 12.6 6.1 0 12-2.9 15-7.1z" fill="#160e37" data-color="2"></path>
+                        </g>
+                    </svg>
+                  </div>
+                  <div class="card-body">
+                      <h5 class="card-title">Expert Team</h5>
+                      <p class="card-text">Our team is composed of experts in their fields.</p>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col-md-4">
+              <div class="card">
+                  <div class="card-icon">
+                      <!-- Third Icon -->
+                      <svg preserveAspectRatio="xMidYMid meet" data-bbox="45 50 110 100" viewBox="45 50 110 100" height="60" width="60" xmlns="http://www.w3.org/2000/svg" data-type="color">
+                          <g>
+                              <path d="M148.643 97.549C148.026 71.227 126.451 50 100 50S51.975 71.227 51.358 97.549c-3.856 2.958-6.358 7.6-6.358 12.827 0 8.514 6.613 15.496 14.967 16.113 8.415 12.161 22.237 20.278 38.163 20.881l.128.003a3.335 3.335 0 0 0 3.329-3.21 3.335 3.335 0 0 0-3.206-3.46c-12.571-.476-23.623-6.377-30.976-15.411 5.821-2.449 9.92-8.212 9.92-14.916 0-8.918-7.251-16.174-16.163-16.174-1.011 0-1.996.105-2.956.284C60.328 73.283 78.261 56.672 100 56.672c21.739 0 39.672 16.611 41.793 37.814a16.1 16.1 0 0 0-2.956-.284c-8.912 0-16.163 7.256-16.163 16.174s7.251 16.174 16.163 16.174c8.912 0 16.163-7.256 16.163-16.174 0-5.226-2.501-9.868-6.357-12.827zm-87.48 3.392c5.199 0 9.429 4.232 9.429 9.435 0 4.408-3.041 8.109-7.131 9.14a9.367 9.367 0 0 1-2.298.295 9.378 9.378 0 0 1-6.073-2.229 9.417 9.417 0 0 1-2.944-9.956 9.467 9.467 0 0 1 5.949-6.161 9.34 9.34 0 0 1 3.068-.524zm77.674 18.87c-5.199 0-9.429-4.232-9.429-9.435 0-5.202 4.23-9.435 9.429-9.435s9.429 4.232 9.429 9.435c-.001 5.202-4.23 9.435-9.429 9.435z" fill="#0E4828"></path>
+                              <path d="M100 132.077c-4.938 0-8.956 4.02-8.956 8.961S95.062 150 100 150s8.956-4.02 8.956-8.961-4.018-8.962-8.956-8.962z" fill="#E98866"></path>
+                          </g>
+                      </svg>
+                  </div>
+                  <div class="card-body">
+                      <h5 class="card-title">Customer Satisfaction</h5>
+                      <p class="card-text">We strive for complete customer satisfaction.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
   </div>
 </section>
   <!-- Services Section -->
@@ -607,16 +1146,17 @@
         <!-- Bootstrap JS (optional but recommended) -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
-    
+       <!-- Link to External JavaScript File -->
+    <script src="/js/whatappsocialchat.js"></script> <!-- Adjust the path as needed -->
         <!-- Custom JavaScript -->
-        <script>
+       <!--<script>
             function toggleChatPopup() {
                 var popup = document.getElementById("chatPopup");
                 popup.style.display = popup.style.display === "none" || popup.style.display === "" ? "block" : "none";
             }
     
             function sendMessage(message) {
-                var phoneNumber = "+917976094754"; // Add your WhatsApp number here, with country code but without the '+'
+                var phoneNumber = "917976094754"; // Add your WhatsApp number here, with country code but without the '+'
                 var url = "https://wa.me/" + phoneNumber + "?text=" + encodeURIComponent(message);
                 window.open(url, "_blank");
             }
@@ -635,6 +1175,13 @@
       </style>
   </head>
   <body>
+    
+  </script> -->
+
+  
+  
+
+
       <!-- Footer Section -->
       <footer class="footer">
           <div class="container">
@@ -680,7 +1227,26 @@
       </footer>
   </body>
   </html>
-  
+  <!--Serach bar suggestions-->
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <!--User Icon CSS-->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Full Screen Slider Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+
+  <!--why choose us-->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Bootstrap JS, Popper.js, and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
  <!-- Bootstrap JS CDN -->
   <!-- Font Awesome Icon Library -->
